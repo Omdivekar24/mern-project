@@ -1,0 +1,478 @@
+/* General styles for Login & Register Pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/logreg1.jpeg') no-repeat center center; 
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+}
+
+.custom-navbar {
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background-color: white !important; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.custom-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, black 50%, red 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.navbar-nav .nav-item {
+  position: relative;
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: black !important;
+  font-weight: bold;
+}
+
+/* Small red dot on hover */
+.navbar-nav .nav-item:hover::before {
+  content: "•";
+  color: red;
+  font-size: 1.2rem;
+  position: absolute;
+  left: -12px;
+  top: 8px;
+}
+
+/* Centering nav items */
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+
+.custom-btn {
+  background-color: #ff4d6d;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.custom-btn:hover {
+  background-color: #e60040;
+}
+
+
+/* Form Box */
+.auth-box {
+  width: 350px; /* Made the box slightly smaller */
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover effect */
+.auth-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.auth-box h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: red;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input Fields */
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.auth-box input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Styling */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background: #ffc107;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Login Button Hover Effect */
+.auth-box button:hover {
+  background: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Link Styling */
+.auth-box p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: black;
+}
+
+.auth-box a {
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-box a:hover {
+  color: rgb(255, 2, 2);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================== 
+   Home Page Styles  
+   ================== */
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.hero-overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+}
+
+
+.explore-btn:hover {
+  background: linear-gradient(135deg, #f5032c, #b61010);
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(255, 87, 34, 0.5);
+}
+
+/* Recipe Categories */
+.recipe-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.category-card {
+  width: 280px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.category-info {
+  padding: 15px;
+  background: #fff5e1;
+  transition: background 0.3s ease-in-out;
+}
+
+.category-info h5 {
+  font-size: 20px;
+  color: #d84315;
+}
+
+.category-info p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Card Hover Effect */
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+.category-card:hover .category-info {
+  background: #ffebcc;
+}
+
+/* Fade & Slide Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* AddRecipe.css */
+
+/* Full-page background */
+.add-recipe-container {
+  background-image: url('/recipf.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 60px; /* Adjusted margin to prevent hiding under navbar */
+}
+
+/* Wider Form Box with Grey Background */
+.recipe-form-box {
+  background: #f0f0f0; /* Light grey background */
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 800px; /* Increased width for rectangular shape */
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Ensure Form Heading is Visible */
+.recipe-form-box h2 {
+  margin-top: 5px;
+}
+
+/* Two-column layout for "Recipe by" & "Recipe Title" */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Each input box in the row */
+.form-group {
+  flex: 1;
+}
+
+/* Input Fields Styling */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Bold & Dark Form Labels */
+.form-label {
+  font-weight: bold;
+  color: #222; /* Darker text for better contrast */
+}
+/* Submit Button Styling */
+.add-recipe-btn {
+  background-color: #ffc107;
+  border: none;
+  font-weight: bold;
+}
+
+.add-recipe-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+    /* AddedRecipe.css */
+
+/* AddedRecipe.css */
+
+/* Background similar to AddRecipe Page */
+.added-recipe-container {
+  background-image: url('/recipsub.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+/* Banner at the top */
+.recipe-banner {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.recipe-banner-text {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Recipe Box Styling */
+.added-recipe-box {
+  background: rgba(255, 255, 255, 0.8); /* Transparent Effect */
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 1500px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe Grid Layout */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Recipe Card Styling */
+.recipe-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-content {
+  text-align: center;
+}
+
+.recipe-content h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.clear-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.clear-button:hover {
+  background: #b52b3b;
+}
+
+.btn-warning {
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .recipe-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on smaller screens */
+  }
+
+  .added-recipe-box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 per row on mobile */
+  }
+}
